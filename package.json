@@ -1,0 +1,31 @@
+{
+  "name": "v26-bears-team-05",
+  "version": "1.0.0",
+  "description": "Chat App",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyages/v26-bears-team-05.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyages/v26-bears-team-05/issues"
+  },
+  "homepage": "https://github.com/chingu-voyages/v26-bears-team-05#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "nodemon": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
