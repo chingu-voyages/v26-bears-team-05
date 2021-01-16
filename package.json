@@ -24,6 +24,7 @@
     "create-react-app": "^4.0.1",
     "express": "*",
     "nodemon": "*",
+    "prettier": "^2.2.1",
     "socket.io": "*"
   },
   "devDependencies": {
