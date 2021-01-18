@@ -5,12 +5,9 @@ import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import { Select, MenuItem, Typography } from '@material-ui/core/'
-import FormControl from '@material-ui/core/FormControl'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
-import Link from '@material-ui/core/Link'
 import { Container } from '@material-ui/core'
-import { grey, red, blue, blueGrey } from '@material-ui/core/colors'
 import { useState } from 'react'
 
 const SignIn = (): JSX.Element => {
@@ -39,7 +36,7 @@ const SignIn = (): JSX.Element => {
                         <Select value={dialCode} id="demo-simple-select" onChange={selectChange}>
                             {options}
                         </Select>
-                        <TextField label="Phone Number" required autoComplete="current-password" />
+                        <TextField label="Phone Number" type="number" required autoComplete="current-password" />
                     </div>
                     <FormControlLabel control={<Checkbox value="remember" color="primary" />} label="Remember me" />
                     <Button type="submit" size="large" fullWidth variant="contained" color="primary">
